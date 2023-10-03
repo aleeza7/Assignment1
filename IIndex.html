@@ -1,5 +1,6 @@
 <html> 
  <head>
+ 
   
   <style> 
 
@@ -9,7 +10,7 @@
           Grid-row-start: 1;
           Grid-row-end: 2;
           Grid-column-start: 1;
-          Grid-column-end: 4;
+          Grid-column-end: 5;
           Background:#293A58; 
         }
 
@@ -17,49 +18,46 @@
         {
           Grid-row-start: 2;
           Grid-row-end: 3;
-          Grid-column-start: 1;
-          Grid-column-end: 2;
+          Grid-column-start: 2;
+          Grid-column-end: 3;
+        
         }
 
     .picture2
         {
-          Grid-row-start: 4;
+          Grid-row-start: 3;
           Grid-row-end: 5;
-          Grid-column-start: 1;
-          Grid-column-end: 2;
+          Grid-column-start: 4;
+          Grid-column-end: 5;
+      
         }
 
      .picture3
         {
-          Grid-row-start: 3;
-          Grid-row-end: 4;
-          Grid-column-start: 2;
-          Grid-column-end: 3;
-        }
-     .picture4
-        {
-          Grid-row-start: 2;
-          Grid-row-end: 3;
-          Grid-column-start: 3;
-          Grid-column-end: 4;
-        }
-
-     .picture5
-        {
-          Grid-row-start: ;
+          Grid-row-start: 4;
           Grid-row-end: 5;
           Grid-column-start: 3;
           Grid-column-end: 4;
+       
+        }
+     .picture4
+        {
+          Grid-row-start: 3;
+          Grid-row-end: 4;
+          Grid-column-start: 1;
+          Grid-column-end: 2;
+   
         }
 
 
     .content1
         {
-          Grid-row-start: 2;
-          Grid-row-end: 3;
+          Grid-row-start: 3;
+          Grid-row-end: 4;
           Grid-column-start: 2;
           Grid-column-end: 3;
           Background: #3D4F6E;
+         
          }
 
     
@@ -67,17 +65,19 @@
         {
           Grid-row-start: 3;
           Grid-row-end: 4;
-          Grid-column-start: 1;
-          Grid-column-end: 2;
-          Background: #3D4F6E;
-         }
-       .content3
-        {
-          Grid-row-start: 3;
-          Grid-row-end: 4;
           Grid-column-start: 3;
           Grid-column-end: 4;
           Background: #3D4F6E;
+
+         }
+       .content3
+        {
+          Grid-row-start: 2;
+          Grid-row-end: 3;
+          Grid-column-start: 3;
+          Grid-column-end: 4;
+          Background: #3D4F6E;
+        
          }
        .content4
         {
@@ -86,15 +86,18 @@
           Grid-column-start: 2;
           Grid-column-end: 3;
           Background: #3D4F6E;
+        
          }
         .footer
         {
           Grid-row-start: 5;
           Grid-row-end: 6;
           Grid-column-start: 1;
-          Grid-column-end: 4;
-          Background: #293A58; 
+          Grid-column-end: 5;
+          Background: #293A58;
+         
         }
+   
 
         Div 
         {
@@ -103,15 +106,24 @@
         Body
         { 
           color: CCD3DF; 
-          text-align: center; 
+          text-align: center;
+          img-align:center; 
           font-size: 30px; 
           background-color: #3D4F6E; 
+         
 
           display: grid;
          grid-template-colums: 1fr 1fr 1fr; 
          grid-template-rows: 200x 1fr 1fr 50x
          gap: 11px
          }
+        
+       
+         }
+        .pic1:hover {
+         border:5px solid red;
+         }
+   
        <title>Mystery Game!</title> 
 
       </style>
@@ -124,9 +136,9 @@
     </div>
    
    <br>  
-   <p><marquee style="text-color:#A90F0F; border: 2px solid; border-color:#394C9A;">Who Am I?</marquee></p>
+ 
     <div class="picture1">
-      <img src="questionmarkblack.jpeg" onclick = "this.src ='batmobile.jpeg';" onclick width="95%" style ="border: 2px solid white;">
+      <img src="questionmarkblack.jpeg" onclick = "this.src ='batmobile.jpeg';" onclick width=400 onclick height=200 style ="border: 2px solid white;">
    </div>
    <br>
    
@@ -143,26 +155,24 @@
     </div>
    
     <div class="content1">
-        <img src = "questionmarkwhite.jpeg" width= "300" style= "border: 2 px white solid;" onclick = "this.innerHTML=
-        Here's some <u>keywords</u> that can lead you to the answer! 
-          <li>13 Films</li>
-          <li>Mask</li>
-          <li>Wealthy </li>;"
+        <h2 onclick="this.innerHTML='Mask, wealth, and dark are all keywords that can help you';" onclick width=90% style ="border: 2px solid white;">
+    ?????????????
+        </h2>
       </div>
      
      <div class="content2">
-       <img src="questionmarkblack.jpeg" onclick = "inner.html=Enemy with makeup and colored hair;" onclick width="300" style ="border: 2px solid white;">
+       <h2 onclick="this.innerHTML= 'Enemy with makeup and colored hair';" onclick width=90% style ="border: 2px solid white;"> ?????????????????? </h2>
      </div>
 
      <div class="content3">
-       <img src="questionmarkblack.jpeg" onclick = "inner.html=Sidekick with a mask and colorful clothes;" onclick width="300" style ="border: 2px solid white;">
+       <h2 onclick = "this.innerHTML= 'Sidekick with a mask and colorful clothes';" onclick width=90% style ="border: 2px solid white;"> ?????????????????? </h2> 
      </div>
      
      <div class="content4">
-       <img src="questionmarkblack.jpeg" onclick = "inner.html= Christian,  Robert, Zachary, Val;" onclick width="300" style ="border: 2px solid white;">
+       <h2 onclick = "this.innerHTML= 'Christian, Robert, Zachary, Val';" onclick width=90% style ="border: 2px solid white;"> ?????????????????? </h2>
      </div>
-          <div class="content4">
-       <inner.html="Double Click for Answer Reveal" onbclick = "inner.html= Batman;" onclick width="300" style ="border: 2px solid white;">
+          <div class="footer">
+       <h1 ondblclick = "this.innerHTML= 'Batman';" onclick width=200" style ="border: 2px solid white;"> Double Click for Answer Reveal
      </div>
    </body>
 </html>
